@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TO-DO LIST</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+  <div class="container">
+    <h1 style="color:rgb(171, 25, 122);text-align: center;margin-bottom: 36px;font-style: oblique;">To-do List</h1>
+    <div  style="display: flex;justify-content: space-between;margin-bottom: 25px;">
+      <input class="todo-input" style="color: whitesmoke;" placeholder="Add a new task...">
+      <button class="add-button">
+        <i class="fa fa-plus-circle"></i>
+      </button>
+    </div>
+    <div class="filters" style="display: flex;justify-content: space-between;margin-bottom: 25px;">
+      <div class="filter" style="color: #eee;padding: 5px 15px;border-radius: 100px;border: 2px solid #e6b7eca1;transition: all 0.2s ease;cursor: pointer;" data-filter="completed">Complete</div>
+      <div class="filter" style="color: #eee;padding: 5px 15px;border-radius: 100px;border: 2px solid #e6b7eca1;transition: all 0.2s ease;cursor: pointer;" data-filter="pending">Incomplete</div>
+      <div class="delete-all" style="display: flex;color: #eee;padding: 7px 15px;cursor: pointer;transition: all 0.2s ease;">Delete All</div>
+    </div>
+    <div class="todos-container" style="height: 300px;overflow: overlay;">
+      <ul class="todos"></ul>
+      <img class="empty-image" style="margin: 55px auto 0;display: block;" src="todopi.jpeg">
+    </div>
+  </div>
+  <script src="todo.js"></script>
+</body>
+</html>
